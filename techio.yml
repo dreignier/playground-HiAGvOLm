@@ -6,6 +6,6 @@ plan:
   - title: A first example
     statement: part2/statement.md
 projects:
-  part1:
+  part2:
     root: /part2
     runner: techio/node-npm-runner
