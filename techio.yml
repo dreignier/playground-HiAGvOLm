@@ -8,4 +8,4 @@ plan:
 projects:
   part2:
     root: /part2
-    runner: techio/node-npm-runner
+    runner: node
