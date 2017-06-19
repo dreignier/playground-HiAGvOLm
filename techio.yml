@@ -3,4 +3,9 @@ title : Javascript, async and await keywords
 plan:
   - title: Welcome
     statement: part1/statement.md
+  - title: A first example
+    statement: part2/statement.md
 projects:
+  part1:
+    root: /part2
+    runner: techio/node-npm-runner
