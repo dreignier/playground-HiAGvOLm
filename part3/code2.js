@@ -8,6 +8,6 @@ job()
     console.log(message);
 })
 
-.catch(function(error)) {
+.catch(function(error) {
     console.log(error);
 });
