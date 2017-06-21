@@ -5,7 +5,12 @@ plan:
     statement: part1/statement.md
   - title: A first example
     statement: part2/statement.md
+  - title: Error handling
+    statement: part3/statement.md
 projects:
   part2:
     root: /part2
+    runner: node
+  part3:
+    root: /part3
     runner: node
