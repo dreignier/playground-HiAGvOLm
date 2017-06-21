@@ -1,4 +1,4 @@
-async job() {
+async function job() {
     throw new Error('error');
 }
 

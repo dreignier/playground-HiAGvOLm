@@ -1,8 +1,8 @@
-async job() {
+async function job() {
     return 'test';
 }
 
-async main() {
+async function main() {
     console.log(await job());
 }
 
