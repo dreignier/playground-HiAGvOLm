@@ -5,4 +5,8 @@ If you remember the [playground on promises](https://tech.io/playgrounds/347/jav
 
 So, what is the most natural way to handle an error when using `async` and `await` ? Yes, you have it. Use a simple `try { ... } catch (error) { ... }`. Look at the following example:
 
-@[Error handling example]({"stubs":["code.js"], "command":"node code.js", "project":"part3"})
+@[Error handling example]({"stubs":["code1.js"], "command":"node code1.js", "project":"part3"})
+
+If you want to return a rejected promise in an `async` function, you just have to throw an error. Look at this example:
+
+@[Return a rejected promise]({"stubs":["code2.js"], "command":"node code2.js", "project":"part3"})
