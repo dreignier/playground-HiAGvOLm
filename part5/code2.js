@@ -8,7 +8,7 @@ function job() {
 }
 
 async function main() {
-    let messages = await Promises.all([job(), job(), job()]);
+    let messages = await Promise.all([job(), job(), job()]);
 
     messages.forEach(function(message) {
         console.log(message);
