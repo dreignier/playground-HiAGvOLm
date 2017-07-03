@@ -11,6 +11,8 @@ plan:
     statement: part4/statement.md
   - title: Some tricks
     statement: part5/statement.md
+  - title: Time to pratice
+    statement: part6/statement.md
 projects:
   part2:
     root: /part2
@@ -23,4 +25,7 @@ projects:
     runner: node
   part5:
     root: /part5
+    runner: node
+  part6:
+    root: /part6
     runner: node
