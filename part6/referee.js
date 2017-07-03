@@ -99,7 +99,7 @@ async function test2() {
 }
 
 async function test3() {
-    console.log('Test 2: database will throw an error');
+    console.log('Test 3: database will throw an error');
 
     let result = Promise.reject(42);
 
@@ -120,16 +120,16 @@ async function test3() {
     try {
         let name = await job(result, database, errorManager);
 
-        console.error('Test 2: You must return a rejected promise');
+        console.error('Test 3: You must return a rejected promise');
         sucess = false;
     } catch (error) {
         if (error !== 'Database corrupted') {
-            console.error('Test 2: Error must be "Database corrupted" but it is', error);
+            console.error('Test 3: Error must be "Database corrupted" but it is', error);
             success = false;
         }
 
         if (!errorManagerCalled) {
-            console.error('Test 2: You must notify the error manager');
+            console.error('Test 3: You must notify the error manager');
             success = false;
         }
     }
