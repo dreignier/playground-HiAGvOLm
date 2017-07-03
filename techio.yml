@@ -9,7 +9,7 @@ plan:
     statement: part3/statement.md
   - title: Limits and traps
     statement: part4/statement.md
-  - title: Time for pratice
+  - title: Some tricks
     statement: part5/statement.md
 projects:
   part2:
