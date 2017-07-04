@@ -31,7 +31,7 @@ async function test1() {
 
     let result = Promise.resolve(42);
 
-    let dabatase = {
+    let database = {
         get: function(id) {
             if (id !== 42) {
                 throw 'id must be 42 but it is ' + id;
