@@ -32,7 +32,7 @@ async function test1() {
     let result = Promise.resolve(42);
 
     let database = {
-        get: function(id) {
+        get: async function(id) {
             if (id !== 42) {
                 throw 'id must be 42 but it is ' + id;
             }
@@ -67,7 +67,7 @@ async function test2() {
     let result = Promise.reject('Access denied');
 
     let database = {
-        get: function() {
+        get: async function() {
             throw 'database must not be called in this case';
         }
     };
@@ -104,7 +104,7 @@ async function test3() {
     let result = Promise.reject(42);
 
     let database = {
-        get: function() {
+        get: async function() {
             throw 'Database corrupted';
         }
     };
