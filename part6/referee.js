@@ -55,6 +55,8 @@ async function test1() {
         if (name !== 'David') {
             throw 'Response must be "David" but it is ' + name;
         }
+
+        console.log('Test 1: Success !');
     } catch (error) {
         console.error('Test 1: Error during', error);
         success = false;
@@ -95,13 +97,15 @@ async function test2() {
             console.error('Test 2: You must notify the error manager');
             success = false;
         }
+
+        console.log('Test 2: Success !');
     }
 }
 
 async function test3() {
     console.log('Test 3: database will throw an error');
 
-    let result = Promise.reject(42);
+    let result = Promise.resolve(42);
 
     let database = {
         get: async function() {
@@ -132,5 +136,7 @@ async function test3() {
             console.error('Test 3: You must notify the error manager');
             success = false;
         }
+
+        console.log('Test 3: Success !');
     }
 }
