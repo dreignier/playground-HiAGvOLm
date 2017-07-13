@@ -1,6 +1,6 @@
 # `await` can be only used in an `async` function
 
-You can't use `await` outside of an `async` function. The code will just crash. When you are coding in a NodeJS environment, that's mean that you can't use `await` in the body directly, you have to use a function:
+You can't use `await` outside of an `async` function. The code will just crash if you try. When you are coding in a NodeJS environment, that's mean that you can't use `await` in the body directly, you have to use a function:
 
 @[Use a main function]({"stubs":["code1.js"], "command":"node code1.js", "project":"part4"})
 
