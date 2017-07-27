@@ -5,8 +5,8 @@ function job(result, database, errorManager) {
         return database.get(id);
     })
 
-    .then(function(infos) {
-        return infos.name;
+    .then(function(info) {
+        return info.name;
     })
 
     .catch(function(error) {

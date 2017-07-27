@@ -5,7 +5,7 @@ function job() {
 async function main() {
     let message = await job();
 
-    console.log('message');
+    console.log(message);
 }
 
 main();
